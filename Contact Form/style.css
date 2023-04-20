@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+.main_headiing{
+    color: rgb(4, 111, 218);
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  margin: 15px;
+  padding: 15px;
+}
+textarea{
+  padding: 12px;
+  margin: 12px;
+  height: auto;
+  width: auto;
+}
+h1 {
+  text-align: center;
+}
+h6{
+    color: rgb(228, 169, 111);
+}
+input[text="name"],
+  input[text="email"],
+  input[text="message"],
+  input[text="subject"],
+
+  input[type="submit"]{
+  background-color: lightskyblue;
+  color: white;
+  padding: 12px 20px;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: lightseagreen;
+}

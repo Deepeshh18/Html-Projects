@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Practice</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: lightslategray;
+        width: 100%;
+        height: 100%;
+      }
+
+      .navbar {
+        width: 100%;
+        background-color: black;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 15px 16px;
+      }
+
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li a {
+        background-color: rgb(241, 156, 156);
+        color: black;
+        border: 2px solid brown;
+        padding: 5px 5px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .search {
+        float: right;
+        padding: 12px 100px;
+      }
+      .navbar input {
+        border: 2px solid rgb(17, 17, 17);
+        border-radius: 5px;
+        padding: 3px 17px;
+        width: 160px;
+      }
+      .navbar:hover {
+        background-color: rosybrown;
+      }
+      .navbar li a:hover {
+        border: 2px solid black;
+        background-color: brown;
+        color: white;
+      }
+
+      #h1{
+        font-size: 50px;
+        line-height: 10px;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+
+      }
+      .maindiv {
+        width: 70%;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-size: 100% 100%;
+        box-shadow: 4px 5px 6px 7px lightyellow;
+        border-radius: 4px;
+        animation: slider 10s infinite linear;
+        margin-top: 50px;
+        background-image: url(./img/alan-scales-1_WMZARl81c-unsplash.jpg);
+      }
+
+      @keyframes slider {
+        0% {
+          background-image: url(./img/art-g152571353_1920.jpg);
+        }
+        35% {
+          background-image: url(./img/eye-gaf7ae5b5c_1920.png);
+        }
+        75% {
+          background-image: url(./img/watercolor-gfd6610c6a_1920.jpg);
+        }
+
+        100% {
+          background-image: url(./img/hands-g4d9637b3e_1920.jpg);
+        }
+      }
+
+      #img {
+        border-radius: 3px;
+        margin-top: 600px;
+        width: 100%;
+        height: 350px;
+        border: 3px solid black;
+        display: inline-flex;
+        background-color: white;
+      }
+
+      #pra {
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 0.1;
+        padding: 5px;
+        margin-top: 110px;
+      }
+      #product {
+        border-radius: 3px;
+        margin-top: 50px;
+        width: 100%;
+        height: 350px;
+        background-color: lightgoldenrodyellow;
+        border: 3px solid black;
+        box-shadow: 1px 2px 3px 4px rgb(239, 211, 160);
+        display: inline-flex;
+        padding: 5px 5px;
+        padding-left: 10px;
+      }
+      .img-1 {
+        border-radius: 3px;
+        padding-left: 10px;
+        border-spacing: 10px;
+        border: 2px solid rgb(244, 214, 95);
+        box-shadow: 1px 2px 3px 4px rgb(231, 243, 104);
+        padding-left: 40px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: inline-flex;
+      }
+
+      #footer {
+        border-radius: 3px;
+        width: 100%;
+        height: 100px;
+        margin-top: 50px;
+        background-color: rgb(217, 124, 124);
+        border: 2px solid black;
+        box-shadow: 2px 4px 8px 9px rgb(247, 210, 110);
+        text-align: center;
+        color: black;
+      }
+
+      #last {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 6px 6px lightgrey;
+        background-image: url(./img/alan-scales-1_WMZARl81c-unsplash.jpg);
+        margin-top: 22px;
+        font-size: 50px;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Services</a></li>
+
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search this website"
+            />
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1 id="h1">Think unlimited.</h1>
+      <div class="maindiv"></div>
+      <h2 class="h2"><a href="#"></a></h2>
+      <div id="img">
+        <img
+          src="./sketches/PicsArt_12-06-01.16.21.jpg"
+          alt=""
+          width="400px"
+          height="340px"
+        />
+        <p id="pra">
+          This article is about the general concept of art. For the group of
+          creative disciplines, see The arts. For other uses, see Art
+          (disambiguation). Clockwise from upper left: an 1887 self-portrait by
+          Vincent van Gogh; a female ancestor figure by a Chokwe artist; detail
+          from The Birth of Venus (c. 1484–1486) by Sandro Botticelli; and an
+          Okinawan Shisa lion Art is a diverse range of human activity, and
+          resulting product, that involves creative or imaginative talent
+          expressive of technical proficiency, beauty, emotional power, or
+          conceptual ideas.
+        </p>
+      </div>
+
+      <div id="product">
+        <div class="img-1">
+          <img
+            src="./sketches/IMG_20210116_012223.jpg"
+            alt=""
+            width="250px"
+            height="280px"
+          />
+        </div>
+        <div class="img-1">
+          <img
+            src="sketches/IMG_20201017_105433.jpg"
+            alt=""
+            width="250px"
+            height="280px"
+          />
+        </div>
+        <div class="img-1">
+          <img
+            src="./sketches/IMG_20210115_103428.jpg"
+            alt=""
+            width="250px"
+            height="280px"
+          />
+        </div>
+        <div class="img-1">
+          <img
+            src="./sketches/IMG_20201017_110543.jpg"
+            alt=""
+            width="250px"
+            height="280px"
+          />
+        </div>
+
+        <div class="img-1">
+          <img
+            src="./sketches/IMG_20200217_134141.jpg"
+            alt=""
+            width="250px"
+            height="280px"
+          />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer">
+        <p id="last">
+          <strong>Thank You</strong>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
